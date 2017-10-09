@@ -1,5 +1,8 @@
 function main()
 
+%Reading the image and performing quantization on different bit rates
+%Then plotting a graph; Quantization bits and the mse error in each case
+
 I=imread('lena.jpg');
 Error1=Quantizer_d(I,8)
 Error2=Quantizer_d(I,16)

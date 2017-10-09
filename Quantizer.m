@@ -1,7 +1,12 @@
 function I = Quantizer(Image, Quantizaion_Levels)
  
+%This code performs a scalar quantization for the Image. Also, the 
+%Quantization levels should be given as an argument
+
+
+
 %Example of input Quantizer(I,16),Quantizer(I,256),Quantizer(I,16)
-%Quantizaion_Bits = ceil(log2(Quantizaion_Levels))
+
 Step = ceil(256 / Quantizaion_Levels);
 
 %Creating the steps

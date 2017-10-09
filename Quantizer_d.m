@@ -1,6 +1,13 @@
 function Error=Quantizer_d(Image, Quantizaion_Levels)
 
+%This code performs a dynamic quantization based on the max and min pixel 
+%intensity in the Image. Also, the Quantization levels should be given as 
+%an argument. The output is the mse error between the original image and
+%the quantized image
+
+
 %Example of input Quantizer(I,16),Quantizer(I,256),Quantizer(I,16)
+
 Maximum= double(max(max(Image)));
 Minimum= double(min(min(Image)));
 Step =  ceil( ((Maximum)+1-(Minimum)) /(Quantizaion_Levels) );
